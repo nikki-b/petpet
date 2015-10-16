@@ -1,0 +1,21 @@
+body{
+	background-image: url("http://i.imgur.com/hjhbe.png");
+}
+
+.petbox{
+	height: 200px;
+	background-image: url("http://i.imgur.com/zSDgY9U.png");
+}
+
+.face{
+	font-size: 2.5em;
+	margin-top: 50px;
+}
+
+.title{
+	color: white;
+	text-shadow: 1px 1px 10px purple;
+}
+.title span{
+	background: rgba(100,200,200,0.5)
+}
