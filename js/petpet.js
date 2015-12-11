@@ -92,9 +92,9 @@ var PetBox = React.createClass({
 	render: function() {
 		return ( 
 			<div className='container'>
-				<h2 className='title text-center'>
+				<h3 className='title text-center'>
 					<span> &nbsp;♥₍ ᐢ• ﻌ• ᐢ₎｡ petpet｡₍ ᐢ• ﻌ• ᐢ₎♥ &nbsp; </span>
-				</h2>
+				</h3>
 				<div className='well clearfix col-sm-6 col-sm-offset-3 text-center'>
 					<div className = 'panel panel-info'>
 						<div className = 'panel-heading'>
