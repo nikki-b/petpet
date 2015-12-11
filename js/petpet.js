@@ -14,25 +14,25 @@ var PetBox = React.createClass({
 	eat: function() {
 		if (this.state.meals > 0) {
 			this.setState({
-				face: "( ȌᴥȌ)っ ࿉"
+				face: "( ȌᴥȌ)っ ࿉",
 				message: "you fed petpet!",
 				meals: this.state.meals -= 1,
-				satiety: this.state.satiety += 10,
+				satiety: this.state.satiety += 10
 			});
 		} else {
 			this.setState({
-				face: "(⌯˃̶᷄ ﹏ ˂̶᷄⌯)ﾟ"
-				message: "you don't have any food for petpet!",
+				face: "(⌯˃̶᷄ ﹏ ˂̶᷄⌯)ﾟ",
+				message: "you don't have any food for petpet!"
 			})
 		}
 		this.checkStatus();
 	},
 	sleep: function() {
 		this.setState({
-			face: "(≚ᄌ≚)ƶƵ"
+			face: "(≚ᄌ≚)ƶƵ",
 			message: "petpet is taking a nap.",
 			energy: this.state.energy += 10,
-			happiness: this.state.happiness -= 5,
+			happiness: this.state.happiness -= 5
 		});
 		this.checkStatus();
 	},
@@ -58,15 +58,15 @@ var PetBox = React.createClass({
 		var rand = Math.random();
 		if (rand > 0.5) {
 			this.setState({
-				face: "ღˇ◡ˇ(꒶̮ȌᴥȌ)"
+				face: "ღˇ◡ˇ(꒶̮ȌᴥȌ)",
 				message: "petting petpet!",
-				love: this.state.love += 10,
+				love: this.state.love += 10
 			})
 		} else {
 			this.setState({
-				face: "|Ȍ∩Ȍ)"
+				face: "|Ȍ∩Ȍ)",
 				message: "petpet doesn't want to be petted!",
-				love: this.state.love -= 5,
+				love: this.state.love -= 5
 			});
 		}
 		this.checkStatus();
@@ -74,7 +74,7 @@ var PetBox = React.createClass({
 	checkStatus: function() {
 		if(this.state.happiness >= 100 & this.state.energy >= 100 && this.state.satiety >= 100 && this.state.love >= 100) {
 			this.setState({
-				face: "(๑˃̵ᴗ˂̵)و YAAAyyyyy━ (♥ᴥ♥)",
+				face: "(๑˃̵ᴗ˂̵)و Yay! ━ (♥ᴥ♥)",
 				message: "winner! your petpet loves you~~~!!",
 				gameOver: true
 			})
