@@ -104,7 +104,7 @@ var PetBox = React.createClass({
 							<h5> get petpet to 100 on all stats! </h5>
 						</div>
 						<div className='panel-body petbox'>
-							<h3 className="face"> { this.state.face } </h3>
+							<p className="face"> { this.state.face } </p>
 							<div className='message'> 
 								{ this.state.message } 
 							</div>
